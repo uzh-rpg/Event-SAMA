@@ -1,0 +1,17 @@
+# MeViS: optical flow (DIS-HQ) + linear generator, c=4 — camera-ready config (Event-SAMA paper, Table 1)
+# Paths come from the command line: python convert.py --config configs/mevis_camera_ready.yaml --input <rgb root> --output <events root>
+# sanity_clips are relative to --input.
+
+dataset: mevis
+mode: frames
+fps: 6
+upsample: dis_hq
+target_fps: 200
+target_size: [1024, 1024]
+c_pos: 4
+c_neg: 4
+chunk_frames_cpu: 50
+sanity_clips:
+  - train/JPEGImages/198b02b00ed6
+  - train/JPEGImages/03b5ab0d3111
+  - train/JPEGImages/0401e2cbbb4e

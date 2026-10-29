@@ -1,0 +1,16 @@
+# SA-V: optical flow (DIS-HQ) + linear generator, c=5 — camera-ready config (Event-SAMA paper, Table 1)
+# Paths come from the command line: python convert.py --config configs/sav_videos_camera_ready.yaml --input <rgb root> --output <events root>
+# sanity_clips are relative to --input.
+
+dataset: sav
+mode: video                 # fps read from each video file
+upsample: dis_hq
+target_fps: 200
+target_size: [1024, 1024]
+c_pos: 5
+c_neg: 5
+chunk_frames_cpu: 50
+sanity_clips:
+  - sav_000010
+  - sav_000011
+  - sav_000012

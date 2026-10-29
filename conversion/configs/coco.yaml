@@ -1,0 +1,16 @@
+# COCO 2014: synthetic saccade + linear generator, c=4 — camera-ready config (Event-SAMA paper, Table 1)
+# Paths come from the command line: python convert.py --config configs/coco_camera_ready.yaml --input <rgb root> --output <events root>
+# sanity_clips are relative to --input.
+
+dataset: coco
+mode: images
+saccade_n_frames: 60
+saccade_duration_ms: 300
+saccade_amplitude_px: 8
+target_size: [1024, 1024]
+c_pos: 4
+c_neg: 4
+sanity_clips:
+  - "000000000009"
+  - "COCO_val2014_000000000042"
+  - "000000000139"

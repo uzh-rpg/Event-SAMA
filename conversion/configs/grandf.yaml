@@ -1,0 +1,16 @@
+# GRand-F: synthetic saccade + linear generator, c=5 — camera-ready config (Event-SAMA paper, Table 1)
+# Paths come from the command line: python convert.py --config configs/grandf_camera_ready.yaml --input <rgb root> --output <events root>
+# sanity_clips are relative to --input.
+
+dataset: grandf
+mode: images
+saccade_n_frames: 60
+saccade_duration_ms: 300
+saccade_amplitude_px: 8
+target_size: [1024, 1024]
+c_pos: 5
+c_neg: 5
+sanity_clips:
+  - sa_10010541
+  - sa_10014079
+  - sa_1001894

@@ -1,0 +1,17 @@
+# VidSTG: optical flow (DIS-HQ) + linear generator, c=3 — camera-ready config (Event-SAMA paper, Table 1)
+# Paths come from the command line: python convert.py --config configs/vidstg_camera_ready.yaml --input <rgb root> --output <events root>
+# sanity_clips are relative to --input.
+
+dataset: vidstg
+mode: frames
+fps: 5                      # JPEG frames carry no timing
+upsample: dis_hq
+target_fps: 200
+target_size: [1024, 1024]   # downscale-only cap [H, W]
+c_pos: 3
+c_neg: 3
+chunk_frames_cpu: 50
+sanity_clips:
+  - train/10008553263
+  - train/10011555465
+  - train/10011660054

@@ -1,0 +1,17 @@
+# LLaVA-1.5: synthetic saccade + linear generator, c=5 — camera-ready config (Event-SAMA paper, Table 1)
+# Paths come from the command line: python convert.py --config configs/llava_camera_ready.yaml --input <rgb root> --output <events root>
+# sanity_clips are relative to --input.
+
+dataset: llava
+mode: images
+saccade_n_frames: 60
+saccade_duration_ms: 300
+saccade_amplitude_px: 8
+target_size: [1024, 1024]
+c_pos: 5
+c_neg: 5
+sanity_clips:
+  - "1"
+  - "000195850X"
+  - "0000e8b36676338b"
+  - "2387288"

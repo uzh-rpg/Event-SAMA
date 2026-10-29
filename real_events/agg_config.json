@@ -1,0 +1,49 @@
+{
+ "splits": [
+  {
+   "name": "val",
+   "stats": "/iopsstor/scratch/cscs/sfedorchenko/real_events/mousesis_converted/stats.json",
+   "meta": "/iopsstor/scratch/cscs/sfedorchenko/real_events/mousesis_converted/meta_expressions.json",
+   "annotations": "/iopsstor/scratch/cscs/sfedorchenko/real_events/mousesis_converted/val_annotations.json"
+  },
+  {
+   "name": "train",
+   "stats": "/iopsstor/scratch/cscs/sfedorchenko/real_events/mousesis_train_converted/stats.json",
+   "meta": "/iopsstor/scratch/cscs/sfedorchenko/real_events/mousesis_train_converted/meta_expressions.json",
+   "annotations": "/iopsstor/scratch/cscs/sfedorchenko/real_events/mousesis_train_raw/train_annotations.json"
+  }
+ ],
+ "methods": {
+  "Event-SAMA 10 ms": {
+   "val": "/iopsstor/scratch/cscs/sfedorchenko/real_events/runs/mousesis_10ms_5111698",
+   "train": "/iopsstor/scratch/cscs/sfedorchenko/real_events/runs/mousesis_train_10ms_5124797"
+  },
+  "Event-SAMA 75 ms": {
+   "val": "/iopsstor/scratch/cscs/sfedorchenko/real_events/runs/mousesis_75ms_5112841",
+   "train": "/iopsstor/scratch/cscs/sfedorchenko/real_events/runs/mousesis_train_75ms_5124797"
+  },
+  "Event-SAMA 150 ms": {
+   "val": "/iopsstor/scratch/cscs/sfedorchenko/real_events/runs/mousesis_150ms_5124857",
+   "train": "/iopsstor/scratch/cscs/sfedorchenko/real_events/runs/mousesis_train_150ms_5124797"
+  },
+  "Event-SAMA 300 ms": {
+   "val": "/iopsstor/scratch/cscs/sfedorchenko/real_events/runs/mousesis_300ms_5124857",
+   "train": "/iopsstor/scratch/cscs/sfedorchenko/real_events/runs/mousesis_train_300ms_5124797"
+  },
+  "pseudo-RGB 75 ms -> RGB SAMA": {
+   "val": "/iopsstor/scratch/cscs/sfedorchenko/event_sama_runs/pseudorgb/run_mousesis75",
+   "train": "/iopsstor/scratch/cscs/sfedorchenko/event_sama_runs/pseudorgb/run_mousesis_train75"
+  },
+  "E2VID -> RGB SAMA": {
+   "val": "/iopsstor/scratch/cscs/sfedorchenko/event_sama_runs/e2vid/run_mousesis",
+   "train": "/iopsstor/scratch/cscs/sfedorchenko/event_sama_runs/e2vid/run_mousesis_train"
+  }
+ },
+ "density_rule_windows": {
+  "10": "Event-SAMA 10 ms",
+  "75": "Event-SAMA 75 ms",
+  "150": "Event-SAMA 150 ms",
+  "300": "Event-SAMA 300 ms"
+ },
+ "out": "/iopsstor/scratch/cscs/sfedorchenko/real_events/mousesis_all25_summary.json"
+}

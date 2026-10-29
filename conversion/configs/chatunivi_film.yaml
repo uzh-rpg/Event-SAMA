@@ -1,0 +1,16 @@
+# ChatUniVi: FILM (vid2e adaptive upsampler) + linear generator, c=3 — camera-ready config (Event-SAMA paper, Table 1)
+# Paths come from the command line: python convert.py --config configs/chatunivi_film_camera_ready.yaml --input <rgb root> --output <events root>
+# sanity_clips are relative to --input.
+
+dataset: chatunivi
+mode: video
+upsample: film              # number of inserted frames is adaptive; target_fps only used for logging
+target_fps: 200
+film_pair_batch: 8          # frame pairs per FILM call (GPU throughput only)
+c_pos: 3
+c_neg: 3
+chunk_frames_cpu: 50
+sanity_clips:
+  - v_---9CpRcKoU
+  - v_--0edUL8zmA
+  - v_--1DO2V4K74

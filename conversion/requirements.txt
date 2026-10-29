@@ -1,0 +1,11 @@
+# Versions of the environment the conversion was verified in
+# (NGC TensorFlow 23.05 container: Python 3.10, TensorFlow 2.12, which also provides h5py, PyYAML, matplotlib and Pillow).
+numpy==1.26.4
+opencv-python-headless==4.11.0.86
+numexpr==2.14.1
+scikit-video==1.1.11
+tqdm==4.70.1
+h5py
+pyyaml
+matplotlib
+Pillow

@@ -1,0 +1,8 @@
+# FILM weights (download, see README)
+vid2e_film/film/*
+!vid2e_film/film/.gitkeep
+
+__pycache__/
+*.pyc
+*.tmp.h5
+

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Checkpoints and model weights (never commit -- see docs/CHECKPOINTS.md)
+*.pth
+*.pt
+*.safetensors
+*.ckpt
+
+# Data (never commit -- see docs/DATA.md)
+*.h5
+*.hdf5
+*.tmp.h5
+data/
+
+# FILM interpolation weights (download, see conversion/README.md)
+conversion/vid2e_film/film/*
+!conversion/vid2e_film/film/.gitkeep
+
+# SLURM / cluster run artifacts
+*.out
+*.err
+core_nid*
+core.*
+slurm-*.out
+
+# Eval outputs (only the small result JSONs are tracked)
+eval_protocol/runs/
+postproc_*/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

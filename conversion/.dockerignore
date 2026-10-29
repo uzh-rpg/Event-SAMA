@@ -1,0 +1,3 @@
+# Only requirements.txt is needed to build the image; the repo is mounted at runtime.
+*
+!requirements.txt
