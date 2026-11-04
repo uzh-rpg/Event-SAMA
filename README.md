@@ -73,15 +73,20 @@ sbatch eval_protocol/datacheck_eval_param.sbatch <name> <config> <checkpoint.pth
 
 ## Citation
 
-Please cite the Event-SAMA paper, **and** SAMA, whose architecture and annotations this builds on:
+If you find this work and/or code useful, cite our Event-SAMA paper:
 
 ```bibtex
-@inproceedings{sun2025sama,
-  title     = {Seeing What Matters: Visual Instruction Tuning with Spatio-Temporal Context},
-  author    = {Sun, Ye and others},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2025},
-  note      = {arXiv:2505.18812}
+@inproceedings{fedorchenko_zehnder_2026eventsama,
+  author        = {Fedorchenko, Sergei and
+                   Zehnder, Max and
+                   Zubi{\'c}, Nikola and
+                   Zou, Rong and
+                   Scaramuzza, Davide},
+  title         = {{Event-SAMA}: Language-Grounded Video Object Segmentation
+                   on Neuromorphic Event Streams},
+  booktitle     = {Conference on Neural Information Processing Systems
+                   Workshops ({NeurIPSW})},
+  year          = {2026},
 }
 ```
 
@@ -99,13 +104,3 @@ Copyright 2026 Robotics and Perception Group, University of Zurich.
 - `training/third_parts/` vendors code from mmdet and SAM2, under their respective licenses.
 
 Generated event data inherits the terms of its source dataset — see [docs/DATA.md](docs/DATA.md).
-
-## Provenance
-
-This repository is a merge of two development repositories, squashed to a single commit:
-
-- Conversion pipeline — `mzehnde/Event-SAMA` @ `90b0178` (the author's archival release).
-- Model and training code — `Event-SAMA-train` @ `4498d53` **plus uncommitted working-tree
-  changes**, which is the exact state that produced the `iter_133208` checkpoint.
-- Run configs, eval harness and real-sensor scripts were not under version control; they are
-  included here from the cluster run directories.
